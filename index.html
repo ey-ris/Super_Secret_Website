@@ -1,0 +1,313 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday My Lizzie!!!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="resources/pngimg.com%20-%20heart_PNG51253.png" sizes="any">
+  <link rel="icon" href="resources/pngimg.com%20-%20heart_PNG51253.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="resources/pngimg.com%20-%20heart_PNG51253.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0c2ff, #c2e8ff, #a8f0f7);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h2{
+    color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+
+  button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+
+  button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+
+  button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+  .gallery {
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+
+  footer {
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+
+  #music-toggle {
+    margin-top: 20px;
+  }
+
+  .breaker{
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 100px;
+
+  }
+
+  p{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+
+  .card {
+    position: relative;
+    width: fit-content;
+    height: 320px;
+    background: linear-gradient(to right, #e0c2ff, #c2e8ff, #a8f0f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(to right, #a8f0f7, #c2e8ff, #e0c2ff);
+
+    transition: all 0.5s;
+  }
+
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+
+  .card:hover::before,
+  .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+
+  .card:hover:after {
+    content: "I LOVE YOU <3";
+  }
+
+
+  img {
+    display: block;
+  }
+
+  .stack {
+    width: 55%;
+    max-width: 400px;
+    transition: 0.25s ease;
+    &:hover {
+      transform: rotate(5deg);
+      .imageCard:before {
+        transform: translatey(-2%) rotate(-4deg);
+      }
+      .imageCard:after {
+        transform: translatey(2%) rotate(4deg);
+      }
+    }
+  }
+
+  .imageCard {
+    aspect-ratio: 3 / 2;
+    border: 4px solid;
+    background-color: #fff;
+    position: relative;
+    transition: 0.15s ease;
+    cursor: pointer;
+    padding: 5% 5% 15% 5%;
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 4px solid;
+      background-color: #fff;
+      transform-origin: center center;
+      z-index: -1;
+      transition: 0.15s ease;
+      top: 0;
+      left: 0;
+    }
+
+    &:before {
+      transform: translatey(-2%) rotate(-6deg);
+    }
+
+    &:after {
+      transform: translatey(2%) rotate(6deg);
+    }
+  }
+  .image {
+    width: 100%;
+    border: 4px solid;
+    background-color: #eee;
+    aspect-ratio: 1 / 1;
+    position: relative;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .browser-warning {
+    margin-bottom: 4rem;
+  }
+
+  @supports (aspect-ratio: 1 / 1) {
+    .browser-warning {
+      display: none;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Add some space between the cards */
+    padding: 20px; /* add padding to the container */
+  }
+
+
+</style>
+
+<body>
+  <header>
+    <h1>Happy Birthday My Love!</h1>
+    <button id="music-toggle">CLICK HERE</button>
+
+    <a href="test.html"><button>TESTING PAGE</button></a>
+  </header>
+
+  <section>
+    <p class="card">
+      My dearest love, happy birthday! Every year with you is a gift, a beautiful, unfolding story I cherish more than anything. Your laughter is my favorite melody, your smile the brightest star in my sky, and your heart, the most loving and generous place I know. Today, and every day, I celebrate you – the incredible woman who makes my world infinitely better just by being in it. I love you more than words can say.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <h2>Kitties have something to tell you!</h2>
+    <p class="browser-warning">
+      If this looks wonky to you it's because this browser doesn't support the CSS
+      property 'aspect-ratio'.
+    </p>
+    <div class="card-container">
+      <div class="stack">
+        <div class="imageCard">
+          <div class="image">
+            <img src="resources/images.jpeg" alt="weird">
+          </div>
+        </div>
+      </div>
+
+      <div class="stack">
+        <div class="imageCard">
+          <div class="image">
+            <img src="resources/iloveyou-cat.gif" alt="weird">
+          </div>
+        </div>
+      </div>
+
+      <div class="stack">
+        <div class="imageCard">
+          <div class="image">
+            <img src="resources/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="weird">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class='breaker'>LOOK IT'S US</div>
+  <div style="text-align: center;">
+    <img src="resources/image-removebg-preview.png" alt="love 2day Image">
+  </div>
+
+  <footer>
+    <p>Created with love by Sam</p>
+  </footer>
+
+  <audio id="background-music" autoplay loop>
+    <source src="resources/OIIAOIIA%20CAT%20Happy%20Birthday%20to%20You%20_%20Spinning%20Cat%20Uia%20Meme%200.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
